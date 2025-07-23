@@ -5,46 +5,59 @@
         <title >
             Shreyansh Tiwari &vert; Frontend Dev &amp; Data Analyst
         </title>
-        <meta name="description" content="Hi, I&apos;m Shreyansh a self-taught frontend explorer and data nerd, who loves turning ideas into clean, functional, and user-friendly designs.">
-        <link rel="icon" href="./Styling/bg-img/my-logo.png" type="image/x-icon">
+        <meta charset="UTF-8" name="description" content="Hi, I&apos;m Shreyansh a self-taught frontend explorer and data nerd, who loves turning ideas into clean, functional, and user-friendly designs.">
+        <link rel="icon" href="./Styling/bg-img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./Styling/portfolio.css"> 
+        <link rel="stylesheet" href="./Styling/Header.css">
+        <link rel="stylesheet" href="./Styling/footer.css">
+        <script src="./script.js"></script>
     </head>
 
     <body>
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+         <nav class="sidebar-menu" aria-hidden="true">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
         <header class="header">
-            <div class="header-left">
-                <button class="menu">
-                    <img class="menu-img" src="./Styling/bg-img/menu.svg" alt="menu">
-                </button>
-            </div>
-            <div class="header-middle">
+            <section class="header-left">
+                <label for="menu-toggle" class="menu">
+                    <img class="menu-img" src="./Styling/bg-img/menu.svg" data-hover-src="./Styling/bg-img/closemenu.svg" alt="menu"> 
+                </label>
+            </section>
+            <section class="header-middle">
                 <input class="searchbar" type="text" placeholder="Learn more about me &#94;&lowbar;&#94;" alt="searchbar">
                 <button class="search" alt="searchbutton">
                     <img class="search-icon" alt="search-icon" src="./Styling/bg-img/search.svg">
                 </button>
-            </div>
-            <div class="header-right">
-                <div class="contact-div">
-                    <a href="#contact" class="footer">
+            </section>
+            <section class="header-right">
+                <a href="https://forms.gle/eXs8D5f2mCSd1Lz97">
+                    <div class="contact-div">
                         <p class="contact-me">
-                            <img src="./Styling/bg-img/my-logo.png">                        
+                            <img src="./Styling/bg-img/favicon.ico">                        
                             Contact Me 
                         </p>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 <button class="sidebar">
                     <img class="sidebar-img" src="./Styling/bg-img/sidebar.svg" alt="sidebar">
                 </button>
 
-            </div>
+            </section>
         </header>
 
         <div class="header-img-box">
-            <img class="header-img" src="./Styling/bg-img/space-bg.jpg" alt="deep-space-planet-background">
+            <img class="header-img" src="./Styling/bg-img/header.gif" alt="deep-space-planet-background">
         </div>
 
         <div class="pfp-container">
-            <img class="pfp" src="./Styling/bg-img/batman-pfp.jpg">
+            <img class="pfp" src="./Styling/bg-img/20220807_234548-removebg-preview(2).png">
         </div>
 
         <div class="intro-box">
@@ -76,7 +89,7 @@
                 <div class="skills">
                     <img class="icons" src="./Styling/bg-img/heart-svgrepo-com.svg" alt="man-holding-heart">
                     <h1>Builder &#64 Heart</h1>
-                    <h4>"If frontend development is blend of logic, design, &amp; intuitiveness. Then I&apos;m the connoiseour"</h4>
+                    <h4>"I would like to show you everything firsthand"</h4>
                     <h4 class="card-titles">Things I like building &colon;</h4>
                     <h4>Website, Dashboards, Decks</h4>
                     <h4 class="card-titles">My Works</h4>
@@ -104,7 +117,52 @@
                 </div>
         </div>
 
-        <footer class="footer-div" id="#contact">
+        <div class="project-gallery-div">
+            <p> &gtrless; My Projects &LessGreater;</p>
+            <div class="project-gallery">
+                <a class="links" href="https://shrey01stark.github.io/YouTube-Clone/" target="_blank">
+                    <div class="project">
+                        <img class="proj-img" src="./Styling/bg-img/yt-hover.img" data-hover-src="./Styling/bg-img/Screenshot 2025-07-23 211649.png">
+                        <h2>YouTube Homepage</h2>
+                    </div>
+                </a>
+
+                <a class="links" href="https://1drv.ms/x/c/05a03b8d48a62b7d/EesV4pJP8m5LgLixJSwlGVoB4wxbdzM9DeoCPluqoJbNhQ?e=4uZB67" target="_blank">
+                    <div class="project">
+                        <img class="proj-img" src="./Styling/bg-img/excel-bg.webp" data-hover-src="./Styling/bg-img/Screenshot 2025-07-23 211714.png">
+                        <h2>Car Inventory Dashboard</h2>
+                    </div>
+                </a>
+                <a class="links" href="https://1drv.ms/x/c/05a03b8d48a62b7d/EQ9rn3zcId5Mor1lytld5REBB5hCCS8UywZVZ2WesO93sQ?e=c4zaEw" target="_blank">
+                    <div class="project">
+                        <img class="proj-img" src="./Styling/bg-img/excel-bg-2.jpg" data-hover-src="./Styling/bg-img/Screenshot 2025-07-23 211808.png">
+                        <h2>Sales Report Dashboard</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <footer class="footer-div">
+            <div class="footer-text-logo">
+                <div class="start-a-project">
+                    <h1>Start a Project &vert;</h1>
+                    <p> Wanna collab &amp; start working together? It's time to connect </p>
+                    <a href="https://forms.gle/QsLzvV9DuB17dyt16">
+                        <button class="lets-build">
+                            Let's Build
+                        </button>
+                    </a>
+                </div>
+
+                <a href="">
+                    <div class="my-icon"></div>
+                </a>
+
+                <div class="motto">
+                    <p><span class="apos">"</span> The only way to do great work is to love what you do<span class="apos">."</span></p>
+                </div>
+            </div>
 
             <div class="footer-left">
                 <img class="location-symbol" alt="location-symbol" src="./Styling/bg-img/pin_drop_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg">
@@ -113,40 +171,39 @@
 
             <div class="footer-middle">
                 <a class="social-links" href="https://github.com/shrey01stark">
-                    <p class="contact-icons">
+                    <div class="contact-icons">
                         <img src="./Styling/bg-img/github-svgrepo-com.svg">
-                    </p>
+                    </div>
                 </a>
 
                 <a class="social-links" href="https://wa.me/+919958689676">
-                    <p class="contact-icons">
+                    <div class="contact-icons">
                         <img src="./Styling/bg-img/whatsapp-icon-logo-svgrepo-com.svg">
-                    </p>
+                    </div>
                 </a>
 
                 <a class="social-links" href="https://discordapp.com/users/shrey_stark01">
-                    <p class="contact-icons">
+                    <div class="contact-icons">
                         <img src="./Styling/bg-img/discord-icon-svgrepo-com.svg">
-                    </p>
+                    </div>
                 </a>
 
                 <a class="social-links" href="mailto:shrey.tiwari06@gmail.com">
-                    <p class="contact-icons-gmail">
+                    <div class="contact-icons">
                         <img src="./Styling/bg-img/gmail-svgrepo-com.svg">
-                    </p>
+                    </div>
                 </a>
 
                 <a class="social-links" href="https://dribbble.com/shrey-tiwari06">
-                    <p class="contact-icons-drib">
+                    <div class="contact-icons">
                         <img src="./Styling/bg-img/icons8-dribbble-50.svg">
-                    </p>
+                    </div>
                 </a>
             </div>
 
             <div class="footer-right">
             <p class="made-with-love">
-                Made with love <img class="batman-logo" src="./Styling/bg-img/batman-5-logo-svgrepo-com.svg" alt="batman-symbol">&copy;2025. All rights reserved.
-                
+                Made with love <img class="batman-logo" src="./Styling/bg-img/batman-5-logo-svgrepo-com.svg" alt="batman-symbol">&copy;2025. All rights reserved. 
             </p>
             
             </div>
